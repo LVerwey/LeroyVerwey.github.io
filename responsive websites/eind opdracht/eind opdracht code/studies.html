@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn portfolio\studie's</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  </head>
+<body>
+
+<header>
+
+  <!--css-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Navigatie -->
+  <!-- Mobile-first: hamburger op kleine schermen, horizontaal vanaf md -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Mijn Site</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="werkervaring.html">Werkervaring</a></li>
+          <li class="nav-item"><a class="nav-link active" href="studies.html">Studies</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container" style="padding-top: 50px;">
+
+  <div class="container py-5 mt-3 mt-md-4 bg-light">
+
+  <h4 class="border-bottom pb-2 mb-4"><i class="bi bi-mortarboard-fill me-2"></i>opleidingen</h4>
+
+    <div class="card shadow-sm mb-3">
+      <div class="card-body card border-0 border-start border-primary border-4 shadow-sm">
+        <h5 class="card-title">VMBO-Basis, Groen</h5>
+        <p class="card-text text-muted">Elde College, Schijndel</p>
+        <span class="badge bg-secondary">2019 - 2023</span>
+      </div>
+    </div>
+    <div class="card shadow-sm mb-3">
+      <div class="card-body card border-0 border-start border-primary border-4 shadow-sm">
+        <h5 class="card-title">ICT Helpdesk Medewerker NIV 2</h5>
+        <p class="card-text text-muted">Koning Willem I College, Veghel</p>
+        <span class="badge bg-secondary">2023 – 2025</span>
+      </div>
+    </div>
+    <div class="card shadow-sm mb-3">
+      <div class="card-body card border-0 border-start border-primary border-4 shadow-sm">
+        <h5 class="card-title">Software Developer NIV 4</h5>
+        <p class="card-text text-muted">Koning Willem I College, ’s Hertogenbosch</p>
+        <span class="badge bg-secondary">2025 – heden</span>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-light mt-5">
+  <div id="contact" class="container py-5 text-center">
+    <h2>Contact</h2>
+    <p>Neem gerust contact met mij op</p>
+
+    <!-- Opent formulier -->
+   <!--<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+      Contactformulier
+    </button>
+  </div>
+    --> 
+
+<div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 pb-4">
+  <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Schijndel, Nederland</p>
+  <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i>+31 6 45622049</p>
+  <p class="mb-1"><i class="bi bi-envelope-fill me-2"></i>leroy.verwey@edu-kw1c.nl</p>
+  <p class="mb-1"><i class="bi bi-envelope-fill me-2"></i>lverwey@outlook.com</p>
+</div>
+    
+</footer>
+
+<!-- CONTACT MODAL 
+<div class="modal fade" id="contactModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header mb-3">
+        <h5 class="modal-title">Contactformulier</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+        <div class="container">
+            <p>
+                Vul hier uw gegevens in zodat ik contact met u kan opzoeken.
+            </p>
+        </div>
+
+      <div class="modal-body">
+        <form class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label class="form-label">Naam</label>
+            <input type="text" class="form-control" placeholder="Bijv. Hans" required>
+            <div class="invalid-feedback">
+                Naam is verplicht
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">E-mail</label>
+            <input type="email" class="form-control" placeholder="Bijv. hans.hendrix@Gmail.com" required>
+            <div class="invalid-feedback">
+              E-mail is verplicht
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Bericht</label>
+            <textarea class="form-control" rows="4" placeholder="Zet hier een link in naar een vacaturen of jullie website. Zo kan ik kijken of jullie bij mij passen!" required></textarea>
+            <div class="invalid-feedback">
+              Graag iets invullen.
+            </div>
+          </div>
+
+          <button type="submit" id="submitBtn" class="btn btn-primary w-100">
+            Versturen
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+-->
+
+<!-- Bootstrap JS (MOET ONDERAAN) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Bootstrap form validation + console logging
+  (() => {
+    'use strict';
+
+    const forms = document.querySelectorAll('.needs-validation');
+
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+
+        // Als formulier ongeldig is → stoppen
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        } else {
+          // Formulier is geldig → waarden loggen
+          event.preventDefault(); // voorkomt echt verzenden
+
+          //knop veranderen naar verstuurd
+            const submitBtn = form.querySelector('#submitBtn');
+            submitBtn.textContent = "Verstuurd";
+            submitBtn.classList.remove("btn-primary");
+            submitBtn.classList.add("btn-secondary");
+            submitBtn.disabled = true;
+
+          //console log
+          const naam = form.querySelector('input[type="text"]').value;
+          const email = form.querySelector('input[type="email"]').value;
+          const bericht = form.querySelector('textarea').value;
+
+          console.log("📩 Nieuw formulier verzonden:");
+          console.log("Naam:", naam);
+          console.log("E-mail:", email);
+          console.log("Bericht:", bericht);
+        }
+
+        form.classList.add('was-validated');
+      }, false);
+    });
+  })();
+</script>
+
+
+
+
+
+</body>
+</html>
