@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BetterSleep - Registreren</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="/manifest.json">
+  <script>
+        window.addEventListener("load", async () => {
+   if (!("serviceWorker" in navigator)) {
+      return;
+   }
+
+   try {
+      await navigator.serviceWorker.register("/sw.js");
+      console.log("Service worker registered.");
+   }
+
+   catch (error) {
+      console.error("Service worker registration failed.", error);
+   }
+});
+    </script>
+</head>
+<body class="auth-page">
+
+  <div class="auth-container card">
+    <h1>🌙 BetterSleep</h1>
+    <h2>Registreren</h2>
+
+    <form id="registerForm">
+      <label for="regName">Naam</label>
+      <input type="text" id="regName" required>
+
+      <label for="regEmail">E-mail</label>
+      <input type="email" id="regEmail" required>
+
+      <label for="regPassword">Wachtwoord</label>
+      <input type="password" id="regPassword" required>
+
+      <label for="regGender">Geslacht</label>
+      <select id="regGender" required>
+        <option value="">Kies een optie</option>
+        <option value="Man">Man</option>
+        <option value="Vrouw">Vrouw</option>
+        <option value="Anders">Anders</option>
+      </select>
+
+      <label for="regAge">Leeftijd</label>
+      <input type="number" id="regAge" required>
+
+      <button type="submit">Account maken</button>
+    </form>
+
+    <p>Al een account? <a href="login.html">Log hier in</a></p>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="/manifest.json">
+  <script>
+        window.addEventListener("load", async () => {
+   if (!("serviceWorker" in navigator)) {
+      return;
+   }
+
+   try {
+      await navigator.serviceWorker.register("/sw.js");
+      console.log("Service worker registered.");
+   }
+
+   catch (error) {
+      console.error("Service worker registration failed.", error);
+   }
+});
+    </script>
+</head>
+
+<body>
+
+<header><h1>🌙 BetterSleep Dashboard</h1></header>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <button id="menuToggle" class="menu-toggle" aria-label="Menu">☰</button>
+    <div id="navLinks" class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="slaap.html">Slaap registreren</a>
+      <a href="geschiedenis.html">Geschiedenis</a>
+      <a href="statistieken.html">Statistieken</a>
+      <a href="profiel.html">Profiel</a>
+    </div>
+  </div>
+</nav>
+
+<main class="dashboard">
+  <div class="card"><h2>😴 Uren slaap (gister)</h2><p id="sleepHours">-</p></div>
+  <div class="card"><h2>🌙 Bedtijd</h2><p id="bedTime">-</p></div>
+  <div class="card"><h2>☀️ Wektijd</h2><p id="wakeTime">-</p></div>
+  <div class="card"><h2>📊 Slaapkwaliteit</h2><p id="sleepQuality">-</p></div>
+  <div class="card"><h2>📅 Vandaag</h2><p id="todayInfo">Nog geen slaap geregistreerd vandaag.</p></div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
